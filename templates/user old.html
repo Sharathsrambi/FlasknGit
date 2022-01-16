@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  
+<body>
+    <h1>Just Checking Iframe {{name}}</h1>
+    <h2>HTML iframe Tag</h2>
+    <p>Content goes here</p>
+  
+    <a href="https://ide.geeksforgeeks.org/tryit.php" height="300" width="400"> 
+    Oh Wow! The Link
+    </a>
+    </iframe>
+    <br>
+
+    {% if user %}
+    Hello, {{ user }}!
+    {% else %}
+    Hello, Stranger!
+    {% endif %}
+
+    {% import 'macros.html' as macros %}
+    <ul>
+    {% for comment in comments %}
+        {{ macros.render_comment(comment) }}
+    {% endfor %}
+    </ul>
+</body> 
+</html>

@@ -1,0 +1,122 @@
+
+<html>
+<head>
+   {% block head %}
+    <h2>{% block title %}{% endblock %} - Converter</h2>
+    <H1>{% block abc %}{% endblock %} Here We gooooo!!!</H1>
+    {% endblock %}
+</head>
+
+<body background="/static/ZvqeOc.jpg">
+    <!--div class="Top_left">
+    </div-->
+
+    <!--div class="Top_right">
+
+        <img class="Image_1" src="/static/virtualization-kvm-ubuntu.png"  alt="Ubuntu logo 1" width="100" height="100">
+    </div-->
+
+    <div class="Container">
+    <div id="Column1">
+        {% block body1 %}
+        {% endblock %}
+    </div>
+
+    <div id="Column2">
+        {% block body2 %}
+        {% endblock %}
+        <img class="Image_1" src="/static/virtualization-kvm-ubuntu.png"  alt="Ubuntu logo 1" width="100" height="100">
+    </div>
+    <div id="Column3">
+        {% block body3 %}
+        {% endblock %}
+    </div>
+    </div>
+
+
+    <style>
+        p {
+         font-weight: bold;
+        }
+        title 
+        {
+            font-weight: bolder;  
+        }
+        
+        .Top_right
+        {
+
+        position: relative; 
+        left:  450; 
+        max-width:      250px;
+        height:400;
+        border:         1px solid black;
+        padding:        3px;
+        background-color:   lightyellow;
+        font:           8pt Verdana, Tahoma, "Microsoft Sans Serif", sans-serif;
+
+
+        }
+
+
+        .Top_left {
+        position: relative; 
+        left:  10; 
+        max-width:      250px;
+        height:400;
+        border:         1px solid black;
+        padding:        3px;
+        background-color:   lightyellow;
+        font:           8pt Verdana, Tahoma, "Microsoft Sans Serif", sans-serif;
+        }
+
+
+        .image_1
+        {
+            position:relative;
+                top:50;
+                left:100;
+
+            ;
+        }
+
+        .box1 {
+            border:         6px solid black;
+        padding:        3px;
+        background-color:   Green;
+
+        }
+
+        #column1 {
+            width: 300px;
+            height: 500px;
+            float:left;
+            border:         1px solid black;
+        padding:        10px;
+        background-color:   lightyellow;
+        font:           8pt Verdana, Tahoma, "Microsoft Sans Serif", sans-serif;
+
+        }
+        #column3 {
+            float:left;
+            border:         20px transparent;
+        padding:        10px;
+        background-color:   rgba(112, 97, 98, 0.205);
+        font:           8pt Verdana, Tahoma, "Microsoft Sans Serif", sans-serif;
+
+        }
+
+        #column2 {
+            width: 300px;
+            height: 500px;
+            float: right;
+            border:         1px solid black;
+            padding:        10px;
+            background-color:   #f3c6e2;
+            font:           8pt Verdana, Tahoma, "Microsoft Sans Serif", sans-serif;
+        }
+
+    </style>
+</body>
+</html>
+
